@@ -1,0 +1,13 @@
+{
+  "name": "schreinerei-yacoub",
+  "version": "1.0.0",
+  "description": "Rebuild of Yacoub Schreinerei website",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./assets/css/style.css --minify",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./assets/css/style.css --watch"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

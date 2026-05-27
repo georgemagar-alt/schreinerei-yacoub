@@ -1,0 +1,10 @@
+node_modules/
+.env
+.DS_Store
+assets/css/style.css
+
+# Migration scripts
+parse.py
+download_images.py
+parsed_content.json
+image_mapping.json
