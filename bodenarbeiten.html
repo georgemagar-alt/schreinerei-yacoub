@@ -163,79 +163,125 @@
         </div>
     </section>
 
-    <!-- Services Details (Alternating Layout) -->
-    <section class="py-24 bg-[#f9f8f6]">
+    <!-- Services Details (Premium Editorial Layout) -->
+    <section class="py-32 bg-white">
         <div class="container mx-auto px-4 max-w-7xl">
-            <div class="text-center mb-20">
-                <h2 class="text-sm font-bold text-[#ae8f73] uppercase tracking-[0.2em] mb-4">Portfolio</h2>
-                <h3 class="text-3xl md:text-5xl font-bold text-[#1a1a1a] tracking-tight">Unsere Leistungen im Überblick</h3>
+            <div class="text-center mb-32">
+                <div class="flex items-center justify-center gap-4 mb-4">
+                    <div class="w-8 h-[1px] bg-[#ae8f73]"></div>
+                    <h2 class="text-xs font-bold text-[#ae8f73] uppercase tracking-[0.3em]">Portfolio</h2>
+                    <div class="w-8 h-[1px] bg-[#ae8f73]"></div>
+                </div>
+                <h3 class="text-4xl md:text-5xl lg:text-6xl font-light text-[#1a1a1a] tracking-tight">Unsere <span class="font-bold">Leistungen</span></h3>
             </div>
 
-            <div class="space-y-32">
-                <!-- Parkett -->
-                <div class="flex flex-col lg:flex-row items-center gap-16">
-                    <div class="lg:w-1/2 relative">
-                        <div class="absolute -inset-4 bg-[#ae8f73]/10 rounded-3xl -z-10 transform rotate-2"></div>
-                        <img src="/assets/images/tea,-schreineri-yacoub.jpeg" alt="Parkett verlegen" class="rounded-2xl shadow-xl w-full object-cover h-[400px]">
+            <div class="space-y-40 lg:space-y-48">
+                <!-- Service 01: Parkett -->
+                <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24 relative">
+                    <div class="lg:w-1/2 relative group">
+                        <!-- Elegant backdrop instead of playful rotation -->
+                        <div class="absolute -inset-4 bg-[#f9f8f6] -z-10 transition-transform duration-700 group-hover:scale-105"></div>
+                        <img src="/assets/images/tea,-schreineri-yacoub.jpeg" alt="Parkett verlegen" class="w-full object-cover h-[500px] lg:h-[700px] shadow-2xl filter contrast-[1.05]">
                     </div>
-                    <div class="lg:w-1/2">
-                        <h4 class="text-3xl font-bold mb-6 text-[#1a1a1a]">Parkett verlegen & renovieren</h4>
-                        <p class="text-gray-600 mb-8 text-lg leading-relaxed">Echtholzparkett ist zeitlos und edel – und ein echtes Stück Natur unter den Füßen. Wir verlegen Stabparkett, Mosaikparkett und Landhausdielen, schleifen alte Böden ab, entfernen Kratzer und behandeln sie neu mit Öl oder Lack.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-center text-gray-700"><span class="w-2 h-2 bg-[#ae8f73] rounded-full mr-4"></span> Edle Optik & natürliche Haptik</li>
-                            <li class="flex items-center text-gray-700"><span class="w-2 h-2 bg-[#ae8f73] rounded-full mr-4"></span> Langlebig & mehrfach renovierbar</li>
-                            <li class="flex items-center text-gray-700"><span class="w-2 h-2 bg-[#ae8f73] rounded-full mr-4"></span> Ideal für Fußbodenheizung</li>
+                    <div class="lg:w-1/2 relative">
+                        <!-- Huge background number -->
+                        <div class="hidden lg:block absolute -top-32 -left-24 text-[12rem] font-bold text-gray-50 opacity-80 -z-10 select-none">01</div>
+                        
+                        <div class="text-[#ae8f73] font-bold tracking-widest text-sm mb-6 uppercase">Holzböden</div>
+                        <h4 class="text-4xl lg:text-5xl font-light mb-8 text-[#1a1a1a] leading-tight">Parkett verlegen <br>& renovieren</h4>
+                        <p class="text-gray-500 mb-10 text-lg leading-relaxed font-light">Echtholzparkett ist zeitlos und edel – und ein echtes Stück Natur unter den Füßen. Wir verlegen Stabparkett, Mosaikparkett und Landhausdielen, schleifen alte Böden ab, entfernen Kratzer und behandeln sie neu mit Öl oder Lack.</p>
+                        
+                        <ul class="border-t border-gray-100">
+                            <li class="py-5 border-b border-gray-100 flex items-center text-gray-800 text-sm tracking-widest uppercase font-medium">
+                                <span class="text-[#ae8f73] mr-4 text-lg leading-none">+</span> Edle Optik & natürliche Haptik
+                            </li>
+                            <li class="py-5 border-b border-gray-100 flex items-center text-gray-800 text-sm tracking-widest uppercase font-medium">
+                                <span class="text-[#ae8f73] mr-4 text-lg leading-none">+</span> Langlebig & mehrfach renovierbar
+                            </li>
+                            <li class="py-5 border-b border-gray-100 flex items-center text-gray-800 text-sm tracking-widest uppercase font-medium">
+                                <span class="text-[#ae8f73] mr-4 text-lg leading-none">+</span> Ideal für Fußbodenheizung
+                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Vinyl -->
-                <div class="flex flex-col lg:flex-row-reverse items-center gap-16">
-                    <div class="lg:w-1/2 relative">
-                        <div class="absolute -inset-4 bg-[#ae8f73]/10 rounded-3xl -z-10 transform -rotate-2"></div>
-                        <img src="/assets/images/tea,-schreineri-yacoub.jpeg" alt="Vinyl verlegen" class="rounded-2xl shadow-xl w-full object-cover h-[400px]">
+                <!-- Service 02: Vinyl -->
+                <div class="flex flex-col lg:flex-row-reverse items-center gap-16 lg:gap-24 relative">
+                    <div class="lg:w-1/2 relative group">
+                        <div class="absolute -inset-4 bg-[#f9f8f6] -z-10 transition-transform duration-700 group-hover:scale-105"></div>
+                        <img src="/assets/images/tea,-schreineri-yacoub.jpeg" alt="Vinyl verlegen" class="w-full object-cover h-[500px] lg:h-[700px] shadow-2xl filter contrast-[1.05]">
                     </div>
-                    <div class="lg:w-1/2">
-                        <h4 class="text-3xl font-bold mb-6 text-[#1a1a1a]">Vinyl- & Designböden</h4>
-                        <p class="text-gray-600 mb-8 text-lg leading-relaxed">Vinyl ist pflegeleicht, robust und vielseitig. Ob in Holz-, Stein- oder Betonoptik – wir verlegen Klick-Vinyl oder Designböden, die Feuchtigkeit und Alltagsbelastung mühelos standhalten.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-center text-gray-700"><span class="w-2 h-2 bg-[#ae8f73] rounded-full mr-4"></span> Wasserfest & strapazierfähig</li>
-                            <li class="flex items-center text-gray-700"><span class="w-2 h-2 bg-[#ae8f73] rounded-full mr-4"></span> Große Dekorauswahl</li>
-                            <li class="flex items-center text-gray-700"><span class="w-2 h-2 bg-[#ae8f73] rounded-full mr-4"></span> Für Küche, Bad & Gewerbe geeignet</li>
+                    <div class="lg:w-1/2 relative">
+                        <div class="hidden lg:block absolute -top-32 -right-24 text-[12rem] font-bold text-gray-50 opacity-80 -z-10 select-none">02</div>
+                        
+                        <div class="text-[#ae8f73] font-bold tracking-widest text-sm mb-6 uppercase">Designböden</div>
+                        <h4 class="text-4xl lg:text-5xl font-light mb-8 text-[#1a1a1a] leading-tight">Vinyl- & <br>Designböden</h4>
+                        <p class="text-gray-500 mb-10 text-lg leading-relaxed font-light">Vinyl ist pflegeleicht, robust und vielseitig. Ob in Holz-, Stein- oder Betonoptik – wir verlegen Klick-Vinyl oder Designböden, die Feuchtigkeit und Alltagsbelastung mühelos standhalten.</p>
+                        
+                        <ul class="border-t border-gray-100">
+                            <li class="py-5 border-b border-gray-100 flex items-center text-gray-800 text-sm tracking-widest uppercase font-medium">
+                                <span class="text-[#ae8f73] mr-4 text-lg leading-none">+</span> Wasserfest & strapazierfähig
+                            </li>
+                            <li class="py-5 border-b border-gray-100 flex items-center text-gray-800 text-sm tracking-widest uppercase font-medium">
+                                <span class="text-[#ae8f73] mr-4 text-lg leading-none">+</span> Große Dekorauswahl
+                            </li>
+                            <li class="py-5 border-b border-gray-100 flex items-center text-gray-800 text-sm tracking-widest uppercase font-medium">
+                                <span class="text-[#ae8f73] mr-4 text-lg leading-none">+</span> Für Küche, Bad & Gewerbe
+                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Laminat & Teppich -->
-                <div class="flex flex-col lg:flex-row items-center gap-16">
-                    <div class="lg:w-1/2 relative">
-                        <div class="absolute -inset-4 bg-[#ae8f73]/10 rounded-3xl -z-10 transform rotate-2"></div>
-                        <img src="/assets/images/tea,-schreineri-yacoub.jpeg" alt="Laminat verlegen" class="rounded-2xl shadow-xl w-full object-cover h-[400px]">
+                <!-- Service 03: Laminat & Teppich -->
+                <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24 relative">
+                    <div class="lg:w-1/2 relative group">
+                        <div class="absolute -inset-4 bg-[#f9f8f6] -z-10 transition-transform duration-700 group-hover:scale-105"></div>
+                        <img src="/assets/images/tea,-schreineri-yacoub.jpeg" alt="Laminat verlegen" class="w-full object-cover h-[500px] lg:h-[700px] shadow-2xl filter contrast-[1.05]">
                     </div>
-                    <div class="lg:w-1/2">
-                        <h4 class="text-3xl font-bold mb-6 text-[#1a1a1a]">Laminat & Teppichboden</h4>
-                        <p class="text-gray-600 mb-8 text-lg leading-relaxed">Laminat überzeugt durch modernes Design und günstigen Preis, während wir auf optimale Trittschalldämmung und saubere Übergänge achten. Für weichere Ansprüche bieten wir fachgerecht verlegte Teppichböden, die gemütlich, trittschalldämmend und pflegeleicht sind.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-center text-gray-700"><span class="w-2 h-2 bg-[#ae8f73] rounded-full mr-4"></span> Preiswert & schnell verlegt (Laminat)</li>
-                            <li class="flex items-center text-gray-700"><span class="w-2 h-2 bg-[#ae8f73] rounded-full mr-4"></span> Kratzfest & robust</li>
-                            <li class="flex items-center text-gray-700"><span class="w-2 h-2 bg-[#ae8f73] rounded-full mr-4"></span> Warme, gemütliche Haptik (Teppich)</li>
+                    <div class="lg:w-1/2 relative">
+                        <div class="hidden lg:block absolute -top-32 -left-24 text-[12rem] font-bold text-gray-50 opacity-80 -z-10 select-none">03</div>
+                        
+                        <div class="text-[#ae8f73] font-bold tracking-widest text-sm mb-6 uppercase">Klassiker & Textil</div>
+                        <h4 class="text-4xl lg:text-5xl font-light mb-8 text-[#1a1a1a] leading-tight">Laminat & <br>Teppichboden</h4>
+                        <p class="text-gray-500 mb-10 text-lg leading-relaxed font-light">Laminat überzeugt durch modernes Design und günstigen Preis, während wir auf optimale Trittschalldämmung und saubere Übergänge achten. Für weichere Ansprüche bieten wir fachgerecht verlegte Teppichböden.</p>
+                        
+                        <ul class="border-t border-gray-100">
+                            <li class="py-5 border-b border-gray-100 flex items-center text-gray-800 text-sm tracking-widest uppercase font-medium">
+                                <span class="text-[#ae8f73] mr-4 text-lg leading-none">+</span> Preiswert & schnell verlegt
+                            </li>
+                            <li class="py-5 border-b border-gray-100 flex items-center text-gray-800 text-sm tracking-widest uppercase font-medium">
+                                <span class="text-[#ae8f73] mr-4 text-lg leading-none">+</span> Kratzfest & robust
+                            </li>
+                            <li class="py-5 border-b border-gray-100 flex items-center text-gray-800 text-sm tracking-widest uppercase font-medium">
+                                <span class="text-[#ae8f73] mr-4 text-lg leading-none">+</span> Warme, gemütliche Haptik
+                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Kork, Linoleum & Renovierung -->
-                <div class="flex flex-col lg:flex-row-reverse items-center gap-16">
-                    <div class="lg:w-1/2 relative">
-                        <div class="absolute -inset-4 bg-[#ae8f73]/10 rounded-3xl -z-10 transform -rotate-2"></div>
-                        <img src="/assets/images/tea,-schreineri-yacoub.jpeg" alt="Bodenrenovierung" class="rounded-2xl shadow-xl w-full object-cover h-[400px]">
+                <!-- Service 04: Renovierung -->
+                <div class="flex flex-col lg:flex-row-reverse items-center gap-16 lg:gap-24 relative">
+                    <div class="lg:w-1/2 relative group">
+                        <div class="absolute -inset-4 bg-[#f9f8f6] -z-10 transition-transform duration-700 group-hover:scale-105"></div>
+                        <img src="/assets/images/tea,-schreineri-yacoub.jpeg" alt="Bodenrenovierung" class="w-full object-cover h-[500px] lg:h-[700px] shadow-2xl filter contrast-[1.05]">
                     </div>
-                    <div class="lg:w-1/2">
-                        <h4 class="text-3xl font-bold mb-6 text-[#1a1a1a]">Bodenrenovierung & Spezialböden</h4>
-                        <p class="text-gray-600 mb-8 text-lg leading-relaxed">Neben nachhaltigem Kork, Linoleum und PVC schleifen, spachteln und versiegeln wir auch Ihre vorhandenen Parkett- oder Dielenböden. Wir bringen alte Böden wieder in Topform – staubarm und mit modernster Technik.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-center text-gray-700"><span class="w-2 h-2 bg-[#ae8f73] rounded-full mr-4"></span> Parkett in mehreren Gängen abschleifen</li>
-                            <li class="flex items-center text-gray-700"><span class="w-2 h-2 bg-[#ae8f73] rounded-full mr-4"></span> Fugen spachteln & ausbessern</li>
-                            <li class="flex items-center text-gray-700"><span class="w-2 h-2 bg-[#ae8f73] rounded-full mr-4"></span> Versiegeln oder Ölen für perfekten Glanz</li>
+                    <div class="lg:w-1/2 relative">
+                        <div class="hidden lg:block absolute -top-32 -right-24 text-[12rem] font-bold text-gray-50 opacity-80 -z-10 select-none">04</div>
+                        
+                        <div class="text-[#ae8f73] font-bold tracking-widest text-sm mb-6 uppercase">Wiederaufbereitung</div>
+                        <h4 class="text-4xl lg:text-5xl font-light mb-8 text-[#1a1a1a] leading-tight">Bodenrenovierung & <br>Spezialböden</h4>
+                        <p class="text-gray-500 mb-10 text-lg leading-relaxed font-light">Neben nachhaltigem Kork, Linoleum und PVC schleifen, spachteln und versiegeln wir auch Ihre vorhandenen Parkett- oder Dielenböden. Wir bringen alte Holzböden wieder in Topform – staubarm und mit modernster Technik.</p>
+                        
+                        <ul class="border-t border-gray-100">
+                            <li class="py-5 border-b border-gray-100 flex items-center text-gray-800 text-sm tracking-widest uppercase font-medium">
+                                <span class="text-[#ae8f73] mr-4 text-lg leading-none">+</span> Fachgerechtes Abschleifen
+                            </li>
+                            <li class="py-5 border-b border-gray-100 flex items-center text-gray-800 text-sm tracking-widest uppercase font-medium">
+                                <span class="text-[#ae8f73] mr-4 text-lg leading-none">+</span> Fugen spachteln & ausbessern
+                            </li>
+                            <li class="py-5 border-b border-gray-100 flex items-center text-gray-800 text-sm tracking-widest uppercase font-medium">
+                                <span class="text-[#ae8f73] mr-4 text-lg leading-none">+</span> Versiegeln oder Ölen
+                            </li>
                         </ul>
                     </div>
                 </div>
