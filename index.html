@@ -56,34 +56,34 @@
 <body class="font-sans text-gray-800 antialiased bg-gray-50">
 
     <!-- Header / Nav -->
-    <header class="bg-[#242424] text-white py-2 sticky top-0 z-50">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="/" class="flex items-center">
-                <img src="/assets/images/logo-gold.png" alt="Schreinerei Yacoub Logo" class="h-20 w-auto">
+    <header class="bg-[#1a1a1a]/95 backdrop-blur-md text-white py-3 sticky top-0 z-50 border-b border-white/5 shadow-sm">
+        <div class="container mx-auto px-4 max-w-7xl flex justify-between items-center relative">
+            <a href="/" class="flex items-center group">
+                <img src="/assets/images/logo-gold.png" alt="Schreinerei Yacoub Logo" class="h-16 md:h-20 w-auto group-hover:opacity-90 transition-opacity">
             </a>
             
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-btn" class="md:hidden text-white hover:text-[#BFA37C] focus:outline-none">
+            <button id="mobile-menu-btn" class="md:hidden text-white hover:text-[#ae8f73] focus:outline-none transition-colors">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
 
             <!-- Desktop Nav -->
-            <nav class="hidden md:flex space-x-6 text-sm lg:text-base font-medium">
-                <a href="#leistungen" class="hover:text-[#BFA37C] transition-colors">Leistungen</a>
-                <a href="#warum-wir" class="hover:text-[#BFA37C] transition-colors">Warum wir</a>
-                <a href="#region" class="hover:text-[#BFA37C] transition-colors">Region</a>
-                <a href="#kontakt" class="hover:text-[#BFA37C] transition-colors">Kontakt</a>
+            <nav class="hidden md:flex items-center space-x-10">
+                <a href="#leistungen" class="text-sm font-medium uppercase tracking-widest hover:text-[#ae8f73] transition-colors relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#ae8f73] hover:after:w-full after:transition-all after:duration-300">Leistungen</a>
+                <a href="#warum-wir" class="text-sm font-medium uppercase tracking-widest hover:text-[#ae8f73] transition-colors relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#ae8f73] hover:after:w-full after:transition-all after:duration-300">Warum wir</a>
+                <a href="#region" class="text-sm font-medium uppercase tracking-widest hover:text-[#ae8f73] transition-colors relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#ae8f73] hover:after:w-full after:transition-all after:duration-300">Region</a>
+                <a href="#kontakt" class="ml-4 bg-[#ae8f73] text-white px-7 py-3 rounded-full hover:bg-[#9a7d63] hover:-translate-y-0.5 transition-all duration-300 shadow-[0_4px_14px_0_rgba(174,143,115,0.39)] uppercase tracking-widest text-xs font-bold">Angebot anfragen</a>
             </nav>
         </div>
         
         <!-- Mobile Nav (Hidden by default) -->
-        <nav id="mobile-menu" class="hidden bg-[#242424] w-full px-4 pt-2 pb-4 border-t border-gray-700 mt-2">
-            <a href="#leistungen" class="block py-2 text-white hover:text-[#BFA37C]">Leistungen</a>
-            <a href="#warum-wir" class="block py-2 text-white hover:text-[#BFA37C]">Warum wir</a>
-            <a href="#region" class="block py-2 text-white hover:text-[#BFA37C]">Region</a>
-            <a href="#kontakt" class="block py-2 text-white hover:text-[#BFA37C]">Kontakt</a>
+        <nav id="mobile-menu" class="hidden bg-[#1a1a1a]/95 backdrop-blur-md w-full px-4 pt-4 pb-6 border-t border-white/10 mt-3 absolute left-0 shadow-xl">
+            <a href="#leistungen" class="block py-3 text-white uppercase tracking-widest text-sm hover:text-[#ae8f73] border-b border-white/5 transition-colors">Leistungen</a>
+            <a href="#warum-wir" class="block py-3 text-white uppercase tracking-widest text-sm hover:text-[#ae8f73] border-b border-white/5 transition-colors">Warum wir</a>
+            <a href="#region" class="block py-3 text-white uppercase tracking-widest text-sm hover:text-[#ae8f73] border-b border-white/5 transition-colors">Region</a>
+            <a href="#kontakt" class="block py-3 text-[#ae8f73] uppercase tracking-widest text-sm font-bold mt-2 hover:text-[#9a7d63] transition-colors">Angebot anfragen &rarr;</a>
         </nav>
     </header>
 
