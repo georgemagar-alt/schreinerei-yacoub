@@ -4,11 +4,10 @@
   "description": "Rebuild of Yacoub Schreinerei website",
   "main": "index.js",
   "scripts": {
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./assets/css/style.css --minify",
-    "watch": "npx @tailwindcss/cli -i ./src/input.css -o ./assets/css/style.css --watch"
+    "build": "npx tailwindcss -i ./src/input.css -o ./assets/css/style.css --minify",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./assets/css/style.css --watch"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.3.0",
-    "tailwindcss": "^4.3.0"
+    "tailwindcss": "^3.4.1"
   }
 }
