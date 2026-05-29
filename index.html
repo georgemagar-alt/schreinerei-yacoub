@@ -328,9 +328,9 @@
     </section>
 
     <!-- Contact & Form Section -->
-    <section id="kontakt" class="py-24 bg-[#1a1a1a] text-white relative overflow-hidden">
+    <section id="kontakt" class="py-24 bg-[#f9f8f6] text-[#242424] relative overflow-hidden">
         <!-- Decorative background elements -->
-        <div class="absolute top-0 right-0 w-1/2 h-full bg-[#242424] -skew-x-12 translate-x-32 opacity-50 z-0 hidden lg:block"></div>
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-white -skew-x-12 translate-x-32 opacity-100 z-0 hidden lg:block"></div>
         
         <div class="container mx-auto px-4 max-w-7xl relative z-10">
             <div class="flex flex-col lg:flex-row gap-16 lg:gap-24">
@@ -342,11 +342,11 @@
                         <h2 class="text-sm font-bold text-[#ae8f73] uppercase tracking-[0.2em]">Kontakt</h2>
                     </div>
                     
-                    <h3 class="text-4xl lg:text-5xl font-bold mb-8 text-white leading-[1.15] tracking-tight">
+                    <h3 class="text-4xl lg:text-5xl font-bold mb-8 text-[#242424] leading-[1.15] tracking-tight">
                         Lassen Sie uns über Ihr Projekt sprechen.
                     </h3>
                     
-                    <p class="text-lg text-gray-400 leading-relaxed mb-12">
+                    <p class="text-lg text-gray-600 leading-relaxed mb-12">
                         Sie möchten ein unverbindliches Angebot für Maßanfertigungen, Innenausbau oder Bodenarbeiten in der Südpfalz? Rufen Sie uns an oder schreiben Sie uns – wir beraten Sie gerne persönlich!
                     </p>
                     
@@ -357,7 +357,7 @@
                             </div>
                             <div>
                                 <p class="text-sm uppercase tracking-widest text-gray-500 mb-1 font-semibold">Telefon</p>
-                                <a href="tel:+4917643260079" class="text-xl font-bold text-white hover:text-[#ae8f73] transition-colors">0176 432 600 79</a>
+                                <a href="tel:+4917643260079" class="text-xl font-bold text-[#242424] hover:text-[#ae8f73] transition-colors">0176 432 600 79</a>
                             </div>
                         </div>
                         
@@ -367,7 +367,7 @@
                             </div>
                             <div>
                                 <p class="text-sm uppercase tracking-widest text-gray-500 mb-1 font-semibold">E-Mail</p>
-                                <a href="mailto:info@yacoub-schreinerei.de" class="text-xl font-bold text-white hover:text-[#ae8f73] transition-colors">info@yacoub-schreinerei.de</a>
+                                <a href="mailto:info@yacoub-schreinerei.de" class="text-xl font-bold text-[#242424] hover:text-[#ae8f73] transition-colors">info@yacoub-schreinerei.de</a>
                             </div>
                         </div>
                         
@@ -377,7 +377,7 @@
                             </div>
                             <div>
                                 <p class="text-sm uppercase tracking-widest text-gray-500 mb-1 font-semibold">Adresse</p>
-                                <p class="text-xl font-bold text-white">Hauptstraße 46, 76857 Dernbach</p>
+                                <p class="text-xl font-bold text-[#242424]">Hauptstraße 46, 76857 Dernbach</p>
                             </div>
                         </div>
                     </div>
@@ -385,18 +385,18 @@
                 
                 <!-- Right: Contact Form -->
                 <div class="lg:w-7/12">
-                    <div class="bg-[#242424] p-8 md:p-12 rounded-3xl shadow-2xl border border-white/5 relative">
+                    <div class="bg-white p-8 md:p-12 rounded-3xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] border border-gray-100 relative">
                         <!-- Success Message (hidden by default) -->
-                        <div id="form-success" class="hidden bg-[#ae8f73]/20 border border-[#ae8f73] text-white px-6 py-4 rounded-xl mb-8" role="alert">
+                        <div id="form-success" class="hidden bg-green-50 border border-green-200 text-green-800 px-6 py-4 rounded-xl mb-8" role="alert">
                             <strong class="font-bold block mb-1">Vielen Dank!</strong>
-                            <span class="block text-gray-300">Ihre Anfrage wurde erfolgreich gesendet. Wir melden uns in Kürze bei Ihnen.</span>
+                            <span class="block text-green-700">Ihre Anfrage wurde erfolgreich gesendet. Wir melden uns in Kürze bei Ihnen.</span>
                         </div>
                         
                         <form id="contact-form" action="/api/submit" method="POST">
                             <div class="mb-5">
-                                <label for="service" class="block text-xs font-semibold text-gray-400 mb-2 uppercase tracking-wider">Interesse an / Service</label>
+                                <label for="service" class="block text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wider">Interesse an / Service</label>
                                 <div class="relative">
-                                    <select id="service" name="service" class="w-full px-5 py-4 bg-[#1a1a1a] border border-white/10 text-white rounded-xl focus:ring-1 focus:ring-[#ae8f73] focus:border-[#ae8f73] transition-colors appearance-none outline-none">
+                                    <select id="service" name="service" class="w-full px-5 py-4 bg-[#f9f8f6] border border-transparent text-[#242424] rounded-xl focus:ring-1 focus:ring-[#ae8f73] focus:border-[#ae8f73] transition-colors appearance-none outline-none">
                                         <option value="Möbelbau">Möbelbau</option>
                                         <option value="Innenausbau">Innenausbau</option>
                                         <option value="Türen & Fensterbau">Türen & Fensterbau</option>
@@ -413,29 +413,29 @@
                             
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
                                 <div>
-                                    <label for="name" class="block text-xs font-semibold text-gray-400 mb-2 uppercase tracking-wider">Vor- & Nachname *</label>
-                                    <input type="text" id="name" name="name" required class="w-full px-5 py-4 bg-[#1a1a1a] border border-white/10 text-white rounded-xl focus:ring-1 focus:ring-[#ae8f73] focus:border-[#ae8f73] transition-colors outline-none">
+                                    <label for="name" class="block text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wider">Vor- & Nachname *</label>
+                                    <input type="text" id="name" name="name" required class="w-full px-5 py-4 bg-[#f9f8f6] border border-transparent text-[#242424] rounded-xl focus:ring-1 focus:ring-[#ae8f73] focus:border-[#ae8f73] transition-colors outline-none">
                                 </div>
                                 <div>
-                                    <label for="email" class="block text-xs font-semibold text-gray-400 mb-2 uppercase tracking-wider">E-Mail Adresse *</label>
-                                    <input type="email" id="email" name="email" required class="w-full px-5 py-4 bg-[#1a1a1a] border border-white/10 text-white rounded-xl focus:ring-1 focus:ring-[#ae8f73] focus:border-[#ae8f73] transition-colors outline-none">
+                                    <label for="email" class="block text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wider">E-Mail Adresse *</label>
+                                    <input type="email" id="email" name="email" required class="w-full px-5 py-4 bg-[#f9f8f6] border border-transparent text-[#242424] rounded-xl focus:ring-1 focus:ring-[#ae8f73] focus:border-[#ae8f73] transition-colors outline-none">
                                 </div>
                             </div>
                             
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
                                 <div>
-                                    <label for="phone" class="block text-xs font-semibold text-gray-400 mb-2 uppercase tracking-wider">Telefonnummer</label>
-                                    <input type="tel" id="phone" name="phone" class="w-full px-5 py-4 bg-[#1a1a1a] border border-white/10 text-white rounded-xl focus:ring-1 focus:ring-[#ae8f73] focus:border-[#ae8f73] transition-colors outline-none">
+                                    <label for="phone" class="block text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wider">Telefonnummer</label>
+                                    <input type="tel" id="phone" name="phone" class="w-full px-5 py-4 bg-[#f9f8f6] border border-transparent text-[#242424] rounded-xl focus:ring-1 focus:ring-[#ae8f73] focus:border-[#ae8f73] transition-colors outline-none">
                                 </div>
                                 <div>
-                                    <label for="address" class="block text-xs font-semibold text-gray-400 mb-2 uppercase tracking-wider">Ort / PLZ</label>
-                                    <input type="text" id="address" name="address" class="w-full px-5 py-4 bg-[#1a1a1a] border border-white/10 text-white rounded-xl focus:ring-1 focus:ring-[#ae8f73] focus:border-[#ae8f73] transition-colors outline-none">
+                                    <label for="address" class="block text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wider">Ort / PLZ</label>
+                                    <input type="text" id="address" name="address" class="w-full px-5 py-4 bg-[#f9f8f6] border border-transparent text-[#242424] rounded-xl focus:ring-1 focus:ring-[#ae8f73] focus:border-[#ae8f73] transition-colors outline-none">
                                 </div>
                             </div>
                             
                             <div class="mb-6">
-                                <label for="message" class="block text-xs font-semibold text-gray-400 mb-2 uppercase tracking-wider">Ihre Nachricht</label>
-                                <textarea id="message" name="message" rows="4" class="w-full px-5 py-4 bg-[#1a1a1a] border border-white/10 text-white rounded-xl focus:ring-1 focus:ring-[#ae8f73] focus:border-[#ae8f73] transition-colors outline-none resize-none"></textarea>
+                                <label for="message" class="block text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wider">Ihre Nachricht</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-5 py-4 bg-[#f9f8f6] border border-transparent text-[#242424] rounded-xl focus:ring-1 focus:ring-[#ae8f73] focus:border-[#ae8f73] transition-colors outline-none resize-none"></textarea>
                             </div>
                             
                             <div class="mb-8 text-[11px] text-gray-500 leading-relaxed">
