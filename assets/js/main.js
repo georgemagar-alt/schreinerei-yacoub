@@ -33,7 +33,26 @@ document.addEventListener('DOMContentLoaded', () => {
             successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
         
-        // Remove success parameter from URL without reloading
+    }
+
+    // Handle form error redirect
+    if (urlParams.get('error') === '1') {
+        const form = document.getElementById('contact-form');
+        if (form) {
+            const errorMessage = document.createElement('div');
+            errorMessage.className = 'px-6 py-4 rounded-xl mb-8';
+            errorMessage.style.cssText = 'background:#fef2f2;border:1px solid #fecaca;color:#991b1b;';
+            errorMessage.setAttribute('role', 'alert');
+            errorMessage.innerHTML = '<strong class="font-bold block mb-1">Senden fehlgeschlagen</strong>'
+                + '<span class="block" style="color:#b91c1c;">Ihre Anfrage konnte leider nicht übermittelt werden. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an '
+                + '<a href="mailto:info@yacoub-schreinerei.de" class="underline">info@yacoub-schreinerei.de</a>.</span>';
+            form.parentNode.insertBefore(errorMessage, form);
+            errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    }
+
+    // Remove success/error parameter from URL without reloading
+    if (urlParams.has('success') || urlParams.has('error')) {
         const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.hash;
         window.history.replaceState({path: newUrl}, '', newUrl);
     }
