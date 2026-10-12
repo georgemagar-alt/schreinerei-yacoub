@@ -9,11 +9,7 @@
     
     <!-- Tailwind CSS -->
     <link href="/assets/css/style.css" rel="stylesheet">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- JSON-LD LocalBusiness Schema -->
     <script type="application/ld+json">
@@ -21,7 +17,7 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Schreinerei Yacoub",
-      "image": "/assets/images/image_0.png",
+      "image": "https://yacoub-schreinerei.de/assets/images/logo-gold.png",
       "url": "https://yacoub-schreinerei.de/",
       "telephone": "+49 176 432 600 79",
       "email": "info@yacoub-schreinerei.de",
@@ -59,11 +55,11 @@
     <header class="bg-[#1a1a1a]/95 backdrop-blur-md text-white py-3 sticky top-0 z-50 border-b border-white/5 shadow-sm">
         <div class="container mx-auto px-4 max-w-7xl flex justify-between items-center relative">
             <a href="/" class="flex items-center group">
-                <img src="/assets/images/logo-gold.png" alt="Schreinerei Yacoub Logo" class="h-16 md:h-20 w-auto group-hover:opacity-90 transition-opacity">
+                <img width="240" height="240" src="/assets/images/logo-gold.webp" alt="Schreinerei Yacoub Logo" class="h-16 md:h-20 w-auto group-hover:opacity-90 transition-opacity">
             </a>
             
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-btn" class="md:hidden text-white hover:text-[#ae8f73] focus:outline-none transition-colors">
+            <button id="mobile-menu-btn" aria-label="Menü öffnen" aria-controls="mobile-menu" class="md:hidden text-white hover:text-[#ae8f73] focus:outline-none transition-colors">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
@@ -79,12 +75,12 @@
                     <!-- Dropdown -->
                     <div class="absolute left-0 top-[100%] w-64 bg-white rounded-b-2xl shadow-2xl border-t-2 border-[#ae8f73] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0 z-50 overflow-hidden">
                         <div class="py-2">
-                            <a href="/bodenarbeiten.html" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Bodenarbeiten</a>
-                            <a href="/innenausbau.html" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Innenausbau</a>
-                            <a href="/moebelbau.html" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Möbelbau</a>
-                            <a href="/tueren-fenster.html" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Türen & Fenster</a>
-                            <a href="/massanfertigung.html" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Maßanfertigung</a>
-                            <a href="/restauration.html" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Restauration</a>
+                            <a href="/bodenarbeiten" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Bodenarbeiten</a>
+                            <a href="/innenausbau" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Innenausbau</a>
+                            <a href="/moebelbau" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Möbelbau</a>
+                            <a href="/tueren-fenster" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Türen & Fenster</a>
+                            <a href="/massanfertigung" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Maßanfertigung</a>
+                            <a href="/restauration" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Restauration</a>
                         </div>
                     </div>
                 </div>
@@ -96,19 +92,19 @@
                     <!-- Dropdown -->
                     <div class="absolute left-0 top-[100%] w-64 bg-white rounded-b-2xl shadow-2xl border-t-2 border-[#ae8f73] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0 z-50 overflow-hidden">
                         <div class="py-2">
-                            <a href="/schreiner-landau.html" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Landau i.d. Pfalz</a>
-                            <a href="/schreiner-neustadt.html" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Neustadt a.d.W.</a>
-                            <a href="/schreiner-speyer.html" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Speyer</a>
-                            <a href="/schreiner-karlsruhe.html" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Karlsruhe</a>
-                            <a href="/schreiner-weissenburg.html" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Weißenburg</a>
-                            <a href="/schreiner-frankenthal.html" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Frankenthal</a>
-                            <a href="/schreiner-bad-duerkheim.html" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Bad Dürkheim</a>
-                            <a href="/schreiner-pforzheim.html" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Pforzheim</a>
-                            <a href="/schreiner-kaiserslautern.html" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Kaiserslautern</a>
+                            <a href="/schreiner-landau" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Landau i.d. Pfalz</a>
+                            <a href="/schreiner-neustadt" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Neustadt a.d.W.</a>
+                            <a href="/schreiner-speyer" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Speyer</a>
+                            <a href="/schreiner-karlsruhe" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Karlsruhe</a>
+                            <a href="/schreiner-weissenburg" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Weißenburg</a>
+                            <a href="/schreiner-frankenthal" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Frankenthal</a>
+                            <a href="/schreiner-bad-duerkheim" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Bad Dürkheim</a>
+                            <a href="/schreiner-pforzheim" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Pforzheim</a>
+                            <a href="/schreiner-kaiserslautern" class="block px-6 py-3 text-sm font-medium text-gray-800 hover:bg-[#f9f8f6] hover:text-[#ae8f73] transition-colors border-l-2 border-transparent hover:border-[#ae8f73]">Kaiserslautern</a>
                         </div>
                     </div>
                 </div>
-                <a href="/ratgeber.html" class="text-sm font-medium uppercase tracking-widest hover:text-[#ae8f73] transition-colors relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#ae8f73] hover:after:w-full after:transition-all after:duration-300">Ratgeber</a>
+                <a href="/ratgeber" class="text-sm font-medium uppercase tracking-widest hover:text-[#ae8f73] transition-colors relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#ae8f73] hover:after:w-full after:transition-all after:duration-300">Ratgeber</a>
                 <a href="/#kontakt" class="ml-4 bg-[#ae8f73] text-white px-7 py-3 rounded-full hover:bg-[#9a7d63] hover:-translate-y-0.5 transition-all duration-300 shadow-[0_4px_14px_0_rgba(174,143,115,0.39)] uppercase tracking-widest text-xs font-bold">Angebot anfragen</a>
             </nav>
         </div>
@@ -118,29 +114,29 @@
             <div class="border-b border-white/5">
                 <a href="/#leistungen" class="block py-3 text-white uppercase tracking-widest text-sm hover:text-[#ae8f73] transition-colors">Leistungen</a>
                 <div class="pl-4 pb-2 space-y-2">
-                    <a href="/bodenarbeiten.html" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Bodenarbeiten</a>
-                    <a href="/innenausbau.html" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Innenausbau</a>
-                    <a href="/moebelbau.html" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Möbelbau</a>
-                    <a href="/tueren-fenster.html" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Türen & Fenster</a>
-                    <a href="/massanfertigung.html" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Maßanfertigung</a>
-                    <a href="/restauration.html" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Restauration</a>
+                    <a href="/bodenarbeiten" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Bodenarbeiten</a>
+                    <a href="/innenausbau" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Innenausbau</a>
+                    <a href="/moebelbau" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Möbelbau</a>
+                    <a href="/tueren-fenster" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Türen & Fenster</a>
+                    <a href="/massanfertigung" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Maßanfertigung</a>
+                    <a href="/restauration" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Restauration</a>
                 </div>
             </div>
             <div class="py-2 border-b border-white/5">
                 <span class="block py-2 text-white uppercase tracking-widest text-sm mb-2">Standorte</span>
                 <div class="pl-4 space-y-1">
-                    <a href="/schreiner-landau.html" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Landau i.d. Pfalz</a>
-                    <a href="/schreiner-neustadt.html" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Neustadt a.d.W.</a>
-                    <a href="/schreiner-speyer.html" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Speyer</a>
-                    <a href="/schreiner-karlsruhe.html" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Karlsruhe</a>
-                    <a href="/schreiner-weissenburg.html" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Weißenburg</a>
-                    <a href="/schreiner-frankenthal.html" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Frankenthal</a>
-                    <a href="/schreiner-bad-duerkheim.html" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Bad Dürkheim</a>
-                    <a href="/schreiner-pforzheim.html" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Pforzheim</a>
-                    <a href="/schreiner-kaiserslautern.html" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Kaiserslautern</a>
+                    <a href="/schreiner-landau" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Landau i.d. Pfalz</a>
+                    <a href="/schreiner-neustadt" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Neustadt a.d.W.</a>
+                    <a href="/schreiner-speyer" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Speyer</a>
+                    <a href="/schreiner-karlsruhe" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Karlsruhe</a>
+                    <a href="/schreiner-weissenburg" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Weißenburg</a>
+                    <a href="/schreiner-frankenthal" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Frankenthal</a>
+                    <a href="/schreiner-bad-duerkheim" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Bad Dürkheim</a>
+                    <a href="/schreiner-pforzheim" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Pforzheim</a>
+                    <a href="/schreiner-kaiserslautern" class="block py-2 text-gray-400 text-sm hover:text-[#ae8f73] transition-colors">- Kaiserslautern</a>
                 </div>
             </div>
-            <a href="/ratgeber.html" class="block py-3 text-white uppercase tracking-widest text-sm hover:text-[#ae8f73] border-b border-white/5 transition-colors">Ratgeber</a>
+            <a href="/ratgeber" class="block py-3 text-white uppercase tracking-widest text-sm hover:text-[#ae8f73] border-b border-white/5 transition-colors">Ratgeber</a>
             <a href="/#kontakt" class="block py-3 text-[#ae8f73] uppercase tracking-widest text-sm font-bold mt-2 hover:text-[#9a7d63] transition-colors">Angebot anfragen &rarr;</a>
         </nav>
     </header>
@@ -148,7 +144,7 @@
     <!-- Hero Section -->
     <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="/assets/images/tueren-fenster-2.jpeg" alt="Türen und Fensterbau Schreinerei Yacoub" class="w-full h-full object-cover">
+            <img fetchpriority="high" width="900" height="601" src="/assets/images/tueren-fenster-2.webp" alt="Türen und Fensterbau Schreinerei Yacoub" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-r from-[#1a1a1a]/95 via-[#1a1a1a]/80 to-transparent"></div>
         </div>
         
@@ -213,7 +209,7 @@
                     <div class="lg:w-1/2 relative group">
                         <!-- Elegant backdrop instead of playful rotation -->
                         <div class="absolute -inset-4 bg-[#f9f8f6] -z-10 transition-transform duration-700 group-hover:scale-105"></div>
-                        <img src="/assets/images/tueren-fenster-2.jpeg" alt="Holztüren für Innenräume" class="w-full object-cover h-[500px] lg:h-[700px] shadow-2xl filter contrast-[1.05]" loading="lazy">
+                        <img width="900" height="601" src="/assets/images/tueren-fenster-2.webp" alt="Holztüren für Innenräume" class="w-full object-cover h-[500px] lg:h-[700px] shadow-2xl filter contrast-[1.05]" loading="lazy">
                     </div>
                     <div class="lg:w-1/2 relative">
                         <!-- Huge background number -->
@@ -241,7 +237,7 @@
                 <div class="flex flex-col lg:flex-row-reverse items-center gap-16 lg:gap-24 relative">
                     <div class="lg:w-1/2 relative group">
                         <div class="absolute -inset-4 bg-[#f9f8f6] -z-10 transition-transform duration-700 group-hover:scale-105"></div>
-                        <img src="/assets/images/tueren-fenster-3.jpeg" alt="Haustüren & Wohnungseingangstüren" class="w-full object-cover h-[500px] lg:h-[700px] shadow-2xl filter contrast-[1.05]" loading="lazy">
+                        <img width="1200" height="801" src="/assets/images/tueren-fenster-3.webp" alt="Haustüren & Wohnungseingangstüren" class="w-full object-cover h-[500px] lg:h-[700px] shadow-2xl filter contrast-[1.05]" loading="lazy">
                     </div>
                     <div class="lg:w-1/2 relative">
                         <div class="hidden lg:block absolute -top-32 -right-24 text-[12rem] font-bold text-gray-50 opacity-80 -z-10 select-none">02</div>
@@ -268,7 +264,7 @@
                 <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24 relative">
                     <div class="lg:w-1/2 relative group">
                         <div class="absolute -inset-4 bg-[#f9f8f6] -z-10 transition-transform duration-700 group-hover:scale-105"></div>
-                        <img src="/assets/images/tueren-fenster-4.jpeg" alt="Fensterrahmen aus Holz" class="w-full object-cover h-[500px] lg:h-[700px] shadow-2xl filter contrast-[1.05]" loading="lazy">
+                        <img width="1050" height="700" src="/assets/images/tueren-fenster-4.webp" alt="Fensterrahmen aus Holz" class="w-full object-cover h-[500px] lg:h-[700px] shadow-2xl filter contrast-[1.05]" loading="lazy">
                     </div>
                     <div class="lg:w-1/2 relative">
                         <div class="hidden lg:block absolute -top-32 -left-24 text-[12rem] font-bold text-gray-50 opacity-80 -z-10 select-none">03</div>
@@ -295,7 +291,7 @@
                 <div class="flex flex-col lg:flex-row-reverse items-center gap-16 lg:gap-24 relative">
                     <div class="lg:w-1/2 relative group">
                         <div class="absolute -inset-4 bg-[#f9f8f6] -z-10 transition-transform duration-700 group-hover:scale-105"></div>
-                        <img src="/assets/images/tueren-und-fensterbau.jpeg" alt="Türen und Fenster aus verschiedenen Hölzern" class="w-full object-cover h-[500px] lg:h-[700px] shadow-2xl filter contrast-[1.05]" loading="lazy">
+                        <img width="700" height="467" src="/assets/images/tueren-und-fensterbau.webp" alt="Türen und Fenster aus verschiedenen Hölzern" class="w-full object-cover h-[500px] lg:h-[700px] shadow-2xl filter contrast-[1.05]" loading="lazy">
                     </div>
                     <div class="lg:w-1/2 relative">
                         <div class="hidden lg:block absolute -top-32 -right-24 text-[12rem] font-bold text-gray-50 opacity-80 -z-10 select-none">04</div>
@@ -557,7 +553,7 @@
                 
                 <!-- Col 1: Brand -->
                 <div>
-                    <img src="/assets/images/logo-gold.png" alt="Schreinerei Yacoub Logo" class="h-14 w-auto mb-6 opacity-90">
+                    <img width="240" height="240" src="/assets/images/logo-gold.webp" alt="Schreinerei Yacoub Logo" class="h-14 w-auto mb-6 opacity-90">
                     <p class="text-sm leading-relaxed mb-6">
                         Maßgefertigte Möbel, hochwertiger Innenausbau und traditionelles Handwerk. Ihr Schreinermeisterbetrieb für Karlsruhe und der Region Karlsruhe.
                     </p>
@@ -571,12 +567,12 @@
                         <span class="absolute -bottom-2 left-0 w-8 h-[1px] bg-[#ae8f73]"></span>
                     </h4>
                     <ul class="space-y-3 text-sm">
-                        <li><a href="/moebelbau.html" class="hover:text-[#ae8f73] transition-colors flex items-center"><span class="w-1 h-1 bg-gray-700 rounded-full mr-3"></span>Möbelbau</a></li>
-                        <li><a href="/innenausbau.html" class="hover:text-[#ae8f73] transition-colors flex items-center"><span class="w-1 h-1 bg-gray-700 rounded-full mr-3"></span>Innenausbau</a></li>
+                        <li><a href="/moebelbau" class="hover:text-[#ae8f73] transition-colors flex items-center"><span class="w-1 h-1 bg-gray-700 rounded-full mr-3"></span>Möbelbau</a></li>
+                        <li><a href="/innenausbau" class="hover:text-[#ae8f73] transition-colors flex items-center"><span class="w-1 h-1 bg-gray-700 rounded-full mr-3"></span>Innenausbau</a></li>
                         <li><a href="#leistungen" class="hover:text-[#ae8f73] transition-colors flex items-center"><span class="w-1 h-1 bg-gray-700 rounded-full mr-3"></span>Türen & Fensterbau</a></li>
-                        <li><a href="/restauration.html" class="hover:text-[#ae8f73] transition-colors flex items-center"><span class="w-1 h-1 bg-gray-700 rounded-full mr-3"></span>Restauration</a></li>
-                        <li><a href="/massanfertigung.html" class="hover:text-[#ae8f73] transition-colors flex items-center"><span class="w-1 h-1 bg-gray-700 rounded-full mr-3"></span>Maßanfertigung</a></li>
-                        <li><a href="/bodenarbeiten.html" class="hover:text-[#ae8f73] transition-colors flex items-center"><span class="w-1 h-1 bg-gray-700 rounded-full mr-3"></span>Bodenarbeiten</a></li>
+                        <li><a href="/restauration" class="hover:text-[#ae8f73] transition-colors flex items-center"><span class="w-1 h-1 bg-gray-700 rounded-full mr-3"></span>Restauration</a></li>
+                        <li><a href="/massanfertigung" class="hover:text-[#ae8f73] transition-colors flex items-center"><span class="w-1 h-1 bg-gray-700 rounded-full mr-3"></span>Maßanfertigung</a></li>
+                        <li><a href="/bodenarbeiten" class="hover:text-[#ae8f73] transition-colors flex items-center"><span class="w-1 h-1 bg-gray-700 rounded-full mr-3"></span>Bodenarbeiten</a></li>
                     </ul>
                 </div>
 
@@ -588,7 +584,7 @@
                     </h4>
                     <ul class="space-y-3 text-sm">
                         <li><a href="#" class="hover:text-[#ae8f73] transition-colors flex items-center"><span class="w-1 h-1 bg-gray-700 rounded-full mr-3"></span>Startseite</a></li>
-                        <li><a href="/ratgeber.html" class="hover:text-[#ae8f73] transition-colors flex items-center"><span class="w-1 h-1 bg-gray-700 rounded-full mr-3"></span>Ratgeber</a></li>
+                        <li><a href="/ratgeber" class="hover:text-[#ae8f73] transition-colors flex items-center"><span class="w-1 h-1 bg-gray-700 rounded-full mr-3"></span>Ratgeber</a></li>
                         <li><a href="/#region" class="hover:text-[#ae8f73] transition-colors flex items-center"><span class="w-1 h-1 bg-gray-700 rounded-full mr-3"></span>Einsatzregion</a></li>
                         <li><a href="/#kontakt" class="hover:text-[#ae8f73] transition-colors flex items-center"><span class="w-1 h-1 bg-gray-700 rounded-full mr-3"></span>Kontakt & Anfahrt</a></li>
                     </ul>
@@ -605,14 +601,14 @@
                     <p class="text-sm mb-2"><a href="tel:+4917643260079" class="hover:text-[#ae8f73] transition-colors">Tel: 0176 432 600 79</a></p>
                     <p class="text-sm mb-6"><a href="mailto:info@yacoub-schreinerei.de" class="hover:text-[#ae8f73] transition-colors">info@yacoub-schreinerei.de</a></p>
                     
-                    <p class="text-xs uppercase tracking-widest text-gray-600 mb-2 font-bold">Öffnungszeiten</p>
+                    <p class="text-xs uppercase tracking-widest text-gray-400 mb-2 font-bold">Öffnungszeiten</p>
                     <p class="text-sm text-gray-400">Montag – Samstag<br>07:00 - 17:00 Uhr</p>
                 </div>
                 
             </div>
             
             <!-- Footer Bottom -->
-            <div class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 uppercase tracking-wider">
+            <div class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400 uppercase tracking-wider">
                 <div>
                     &copy; <span id="year"></span> Schreinerei Yacoub. Alle Rechte vorbehalten.
                 </div>
