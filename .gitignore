@@ -8,3 +8,7 @@ parse.py
 download_images.py
 parsed_content.json
 image_mapping.json
+
+# Original stock photos (large source files, use the .webp versions)
+assets/images/AdobeStock_*.jpeg
+assets/images/tueren-fenster-materialien-handwerkskunst.jpg
